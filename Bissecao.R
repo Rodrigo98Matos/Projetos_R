@@ -36,7 +36,11 @@ bissecao<-function(f,a,b,erro=1e-3,n=200){
   }
   }
 }
-f(0)
-f(-5)
+
+f<-function(X){
+  y = (X^5)-6*(X^3)-(X^2)+3;
+  return(y)
+}
+
 
 bissecao(f,0,-5)
